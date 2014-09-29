@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sunny</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_test">Test</string>
+    <string name="action_map">Show Location on Map</string>
+    <string name="share">Share</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_default" translatable="false">311046</string>
+    <string name="pref_unit_label">Units</string>
+    <string name="pref_unit_key" translatable="false">unit</string>
+    <string name="pref_unit_default" translatable="false">0</string>
+
+    <string-array name="units_array">
+        <item name="0">Metric</item>
+        <item name="1">Imperial</item>
+    </string-array>
+    <string-array name="units_array_values">
+        <item name="0">0</item>
+        <item name="1">1</item>
+    </string-array>
+
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

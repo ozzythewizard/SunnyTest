@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="app.com.example.ozgur.sunny.DetailActivity$PlaceholderFragment">
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDate"
+        android:layout_below="@+id/txtDay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#646464"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day"
+        android:id="@+id/txtDay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="20"
+        android:id="@+id/txtHigh"
+        android:layout_below="@+id/txtDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp"
+        android:textSize="96dp"
+        android:textStyle="bold"
+        android:paddingLeft="32dp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="10"
+        android:id="@+id/txtLow"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#646464"
+        android:layout_below="@+id/txtHigh"
+        android:layout_toRightOf="@+id/txtDate"
+        android:layout_toEndOf="@+id/txtDate"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Clear"
+        android:id="@+id/txtState"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#646464"
+        android:textSize="22dp"
+        android:layout_toEndOf="@+id/txtHigh"
+        android:layout_marginLeft="46dp"
+        android:layout_alignBottom="@+id/txtLow"
+        android:layout_toRightOf="@+id/txtHigh" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Humidity:"
+        android:id="@+id/lblHumidity"
+        android:layout_below="@+id/txtLow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pressure:"
+        android:id="@+id/lblPressure"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@+id/lblHumidity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wind:"
+        android:id="@+id/lblWind"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_below="@+id/lblPressure"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtHumidity"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignTop="@+id/lblHumidity"
+        android:layout_toRightOf="@+id/txtLow"
+        android:layout_toEndOf="@+id/txtLow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtPressure"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="11dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="4dp"
+        android:layout_toEndOf="@+id/lblPressure"
+        android:layout_below="@+id/txtHumidity"
+        android:layout_alignRight="@+id/txtState"
+        android:layout_alignEnd="@+id/txtState"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtWind"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="11dp"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="4dp"
+        android:layout_below="@+id/lblPressure"
+        android:layout_toRightOf="@+id/lblWind"
+        android:layout_toEndOf="@+id/lblWind" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/txtDate"
+        android:layout_toRightOf="@+id/txtHigh"
+        android:layout_toEndOf="@+id/txtHigh"
+        android:layout_marginTop="33dp" />
+
+</RelativeLayout>
